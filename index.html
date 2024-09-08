@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket Buy </title>
+    <!-- daisy ui linkup  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font linkup  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .inter {
+            font-family: "Inter", sans-serif;
+
+        }
+
+        .raleway {
+            font-family: "Raleway", sans-serif;
+
+        }
+    </style>
 </head>
+
 <body>
-    <header></header>
+    <header class="max-w-[1173px] mx-auto raleway">
+        <!-- nav section  -->
+      <nav>
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <a class=" text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex text-lg font-medium gap-6">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="flex items-center gap-[10px] px-[30px] py-3 bg-[#1cd1001f] border-[1px] border-[#1DD100] rounded-xl text-xl font-bold text-[#1DD100]">Bus
+                    <img class="" src="/images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </div>
+      </nav>
+        <!-- banner section  -->
+        <section>
+            <div class="hero rounded-[32px] pt-[70px] pb-[135px]"
+                style="background-image: url(./images/banner.png);">
+             
+                <div class="hero-content text-white text-center">
+                    <div class="max-w-[742px]">
+                        <h1 class="mb-5 text-[64px] font-extrabold ">End-to-End Travel with <span class="text-[#1DD100]">P Paribahan</span></h1>
+                        <p class="mb-5 text-lg font-normal leading-[30px] max-w-[691px] inter">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                        </p>
+                        <button class=" rounded-xl px-[30px] py-[21px] text-xl font-bold text-[#030712] bg-[#1DD100]">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
